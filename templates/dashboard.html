@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1>Welcome, {{ session["username"] }}</h1>
+    <p>This dashboard helps you manage your tasks, blogs, and uploaded notes.</p>
+
+    <div class="grid">
+        <a class="box" href="/tasks">To-Do List</a>
+        <a class="box" href="/blogs">Blog Posts</a>
+        <a class="box" href="/upload">Upload Notes</a>
+    </div>
+</div>
+{% endblock %}
